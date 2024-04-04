@@ -12,113 +12,182 @@
   <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-  </div>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+  <!-- navigation -->
+    <nav class="light-blue lighten-1" role="navigation">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
+          <div class="row">
+                    <div class="nav-wrapper container">
+                    <a id="logo-container" href="#" class="brand-logo">Logo</a>
+                    <ul class="right hide-on-med-and-down waves-effect waves-teal">
+                        <li><a href="#">Navbar Link</a></li>
+                    </ul>
+                
+                    <ul id="nav-mobile" class="sidenav waves-effect waves-teal">
+                        <li><a href="#">Navbar Link</a></li>
+                    </ul>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  </div>
+            </div>
+       </div>
+    </nav>
+<!-- ================================================================================================================================ -->
+ <!-- body -->
+<div class="container">
+    <div class="col s3">
+              <!-- Grey navigation panel -->
+      <ul id="slide-out" class="collapsible sidenav sidenav-fixed">
+        <li>
+          <div class="collapsible-header waves-effect "><i class="material-icons">filter_drama</i>First</div>
+          <div class="collapsible-body" style="padding-left:20px;"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header waves-effect "><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body" style="padding-left:20px;"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header waves-effect "><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body" style="padding-left:20px;"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
     </div>
-  </footer>
+
+    <div class="col s9">
+        <!-- Teal page content  -->
+        <div class="row">
+          <div class="col s12 offset-s2">This div is 12-columns wide on all screen sizes This div is 12-columns wide on all screen sizes This div is 12-columns wide on all screen sizes</div>
+          <div class="col s6 offset-s2">6-columns (one-half) 6-columns (one-half) 6-columns (one-half) 6-columns (one-half) 6-columns (one-half)</div>
+          <div class="col s6 offset-s2">
+              <div class="card-panel waves-effect teal">
+                <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                </span>
+              </div>
+              <div class="card-panel waves-effect teal">
+                <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                </span>
+              </div>
+              <div class="card-panel waves-effect teal">
+                <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                </span>
+              </div>
+          </div>
+ 
+        </div>
+
+          <!-- Modal Trigger -->
+        <div class="row">
+            <div class="col s6 offset-s2">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+            </div>
+        </div>
+     </div>
+</div>
+
+    <div class="col s9">
+      <!-- <footer class="page-footer orange" style="position:fixed;bottom:0;left:0;width:100%;">  if we decided that page should be-->
+      <footer class="page-footer orange" style="bottom:0;left:0;width:100%;">
+        <div class="container">
+          <div class="row">
+            <div class="col s6 offset-s2"><span class="flow-text">
+              <h5 class="white-text">Company Bio</h5>
+              <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Settings</h5>
+              <ul>
+                <li><a class="white-text" href="#!">Link 1</a></li>
+                <li><a class="white-text" href="#!">Link 2</a></li>
+                <li><a class="white-text" href="#!">Link 3</a></li>
+                <li><a class="white-text" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Connect</h5>
+              <ul>
+                <li><a class="white-text" href="#!">Link 1</a></li>
+                <li><a class="white-text" href="#!">Link 2</a></li>
+                <li><a class="white-text" href="#!">Link 3</a></li>
+                <li><a class="white-text" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright" >
+          <div class="container">
+            <div class="row">
+            <div class="col s6 offset-s2">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+ 
+
+  
+
+
+
+  
+    
+  
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="{% static 'js/materialize.js' %}"></script>
   <script src="{% static 'js/init.js' %}"></script>
+
+  <script>
+    // code for the modal
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  // code for collapsable modal
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+      
+  </script>
 
   </body>
 </html>
