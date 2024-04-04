@@ -1,57 +1,25 @@
-{% load static %}
+<!-- {% load static %}  if images are needed -->
+{% include "main/navigation.html" %} 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-
-<body>
-
-  <!-- navigation -->
-    <nav class="light-blue lighten-1" role="navigation">
-      <div class="container">
-          <div class="row">
-                    <div class="nav-wrapper container">
-                    <a id="logo-container" href="#" class="brand-logo">Logo</a>
-                    <ul class="right hide-on-med-and-down waves-effect waves-teal">
-                        <li><a href="#">Navbar Link</a></li>
-                    </ul>
-                
-                    <ul id="nav-mobile" class="sidenav waves-effect waves-teal">
-                        <li><a href="#">Navbar Link</a></li>
-                    </ul>
-                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                  </div>
-            </div>
-       </div>
-    </nav>
 <!-- ================================================================================================================================ -->
  <!-- body -->
 <div class="container">
     <div class="col s3">
-              <!-- Grey navigation panel -->
-      <ul id="slide-out" class="collapsible sidenav sidenav-fixed">
-        <li>
-          <div class="collapsible-header waves-effect "><i class="material-icons">filter_drama</i>First</div>
-          <div class="collapsible-body" style="padding-left:20px;"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header waves-effect "><i class="material-icons">place</i>Second</div>
-          <div class="collapsible-body" style="padding-left:20px;"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header waves-effect "><i class="material-icons">whatshot</i>Third</div>
-          <div class="collapsible-body" style="padding-left:20px;"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-      </ul>
+                <!-- Grey navigation panel -->
+        <ul id="slide-out" class="collapsible sidenav sidenav-fixed">
+          <li>
+            <div class="collapsible-header waves-effect "><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body" style="padding-left:20px;"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header waves-effect "><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body" style="padding-left:20px;"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header waves-effect "><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body" style="padding-left:20px;"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+        </ul>
     </div>
 
     <div class="col s9">
@@ -85,109 +53,37 @@
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
             </div>
         </div>
+
+          <!-- Fancy Card -->
+        <div class="row">
+          <div class="col s6 offset-s2">
+                    <div class="fancy_card">
+                      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Sqh4MQSK--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/hzc4hdwc234t7p728i5c.jpg" class="card_image">
+                      <div class="card_text">
+                        <div class="tags">
+                          PyTorch
+                        </div>      
+                        <h2 class="title"> PyTorch Image Recognition with Convolutional Networks</h2>
+                        <div class="summary">
+                          In the last article, we implemented a simple dense network to recognize MNIST images with PyTorch. In this article, we’ll stay with the MNIST recognition task, but this time we’ll use convolutional networks...
+                        </div>
+                      </div>
+                      <div class="card_footer">
+                        <a href="https://nestedsoftware.com">
+                          <img class="author_image" src="https://thepracticaldev.s3.amazonaws.com/i/62j2i9zf91agi13gsl6p.jpg" alt="Nested Software">
+                        </a>
+                        <div class="reading_time">
+                          20 min read        
+                        </div>
+                      </div>
+                    </div>
+          </div>
+        </div>
+
+
      </div>
 </div>
 
-    <div class="col s9">
-      <!-- <footer class="page-footer orange" style="position:fixed;bottom:0;left:0;width:100%;">  if we decided that page should be-->
-      <footer class="page-footer orange" style="bottom:0;left:0;width:100%;">
-        <div class="container">
-          <div class="row">
-            <div class="col s6 offset-s2"><span class="flow-text">
-              <h5 class="white-text">Company Bio</h5>
-              <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-            </div>
-            <div class="col l3 s12">
-              <h5 class="white-text">Settings</h5>
-              <ul>
-                <li><a class="white-text" href="#!">Link 1</a></li>
-                <li><a class="white-text" href="#!">Link 2</a></li>
-                <li><a class="white-text" href="#!">Link 3</a></li>
-                <li><a class="white-text" href="#!">Link 4</a></li>
-              </ul>
-            </div>
-            <div class="col l3 s12">
-              <h5 class="white-text">Connect</h5>
-              <ul>
-                <li><a class="white-text" href="#!">Link 1</a></li>
-                <li><a class="white-text" href="#!">Link 2</a></li>
-                <li><a class="white-text" href="#!">Link 3</a></li>
-                <li><a class="white-text" href="#!">Link 4</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright" >
-          <div class="container">
-            <div class="row">
-            <div class="col s6 offset-s2">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-            </div>
-            </div>
-          </div>
-        </div>
-      </footer>
 
-    </div>
-
-  </div>
-
-
-
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-
- 
-
-  
-
-
-
-  
-    
-  
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="{% static 'js/materialize.js' %}"></script>
-  <script src="{% static 'js/init.js' %}"></script>
-
-  <script>
-    // code for the modal
-      document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.modal').modal();
-  });
-
-  // code for collapsable modal
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
       
-  </script>
-
-  </body>
-</html>
+{% include "main/footer.html" %} 
